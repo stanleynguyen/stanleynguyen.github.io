@@ -27,22 +27,42 @@
 
 #header-next {
   position: absolute;
-  width: 2vw;
-  font-size: 2vw;
-  left: 49vw;
-  bottom: 7vh;
+  width: 100vw;
+  bottom: 5vh;
+  text-align: center;
 }
 
-#header-next__super-script {
-  position: absolute;
-  left: 46vw;
-  bottom: 15vh;
-  text-align: center;
+#header-next__arrow {
+  font-size: 25px;
 }
 
 .btn-no-border, .btn-no-border:hover, .btn-no-border:focus {
   border: none;
   background-color: transparent;
+}
+
+#navbar .navbar-default {
+  background-color: #fff;
+  border-radius: 0;
+  box-shadow: 0px 2px 5px #888888;
+}
+
+#navbar .navbar-collapse {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#navbar .navbar-default .navbar-toggle, #navbar .navbar-default .navbar-toggle:focus, #navbar .navbar-default .navbar-toggle:hover {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+#navbar .navbar-default .navbar-collapse {
+  border-color: #fff;
+}
+
+#about, #projects, #experience {
+  min-height: 100vh;
 }
 
 @media screen and (max-width: 800px) {
@@ -55,15 +75,6 @@
     width: 80vw;
     left: 10vw;
   }
-
-  #header-next {
-    font-size: 4vw;
-    left: 48vw;
-  }
-
-  #header-next__super-script {
-    left: 43vw;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -75,14 +86,5 @@
   #search {
     width: 90vw;
     left: 5vw;
-  }
-
-  #header-next{
-    font-size: 6vw;
-    left: 47vw;
-  }
-
-  #header-next__super-script {
-    left: 35vw;
   }
 }
