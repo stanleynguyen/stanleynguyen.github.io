@@ -19,6 +19,8 @@ $(document).ready(function() {
     }
   });
 
+  $(document).on('click', '.navbar-collapse', $('.navbar-toggle').trigger.bind($('.navbar-toggle'), 'click'));
+
   $(document).on('click', '.scroll', function(e) {
     e.preventDefault();
     smoothScroll($(e.currentTarget).attr('href'));

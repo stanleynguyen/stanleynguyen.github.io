@@ -1,0 +1,14 @@
+[
+  {
+    "name": "SUTD Singapore University of Technology and Design",
+    "category": "education",
+    "description": "University",
+    "tags": ["university", "education"]
+  },
+  {
+    "name": "High School for Gifted Students, Hanoi Pedagogical University",
+    "category": "education",
+    "description": "High-School",
+    "tags": ["high school", "education"]
+  }
+]
