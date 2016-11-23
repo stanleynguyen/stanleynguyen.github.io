@@ -14,10 +14,6 @@
   display: none;
 }
 
-#rocket:hover .fire {
-  display: block;
-}
-
 #search {
   position: absolute;
   width: 50vw;
@@ -27,6 +23,18 @@
 
 #search .form-control, #search .btn {
   height: 40px;
+}
+
+#suggestion {
+  display: none;
+  position: absolute;
+  width: 50vw;
+  top: 53vh;
+  left: 25vw;
+}
+
+#suggestion span a {
+  text-decoration: underline;
 }
 
 #header-next {
@@ -249,7 +257,6 @@ h2 a:hover, h2 a:focus {
   0%, 100% {
     transform: translate(0, 0) rotate(0); } }
 
-.shake-horizontal:hover,
 .shake-trigger:hover .shake-horizontal, .shake-horizontal.shake-freeze, .shake-horizontal.shake-constant {
   animation-name: shake-horizontal;
   animation-duration: 100ms;
@@ -273,6 +280,11 @@ h2 a:hover, h2 a:focus {
     width: 80vw;
     left: 10vw;
   }
+
+  #suggestion {
+    width: 80vw;
+    left: 10vw;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -282,6 +294,11 @@ h2 a:hover, h2 a:focus {
   }
 
   #search {
+    width: 90vw;
+    left: 5vw;
+  }
+
+  #suggestion {
     width: 90vw;
     left: 5vw;
   }
