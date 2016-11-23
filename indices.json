@@ -10,5 +10,23 @@
     "category": "education",
     "description": "High-School",
     "tags": ["high school", "education"]
+  },
+  {
+    "name": "Project Happy",
+    "category": "project",
+    "description": "This project is aimed to provide a helping hand to special-need teachers at Very Special Art by means of a web application.",
+    "tags": ["javascript", "react", "redux", "youtube", "web", "progressive web app", "autism"]
+  },
+  {
+    "name": "Xplorer",
+    "category": "project",
+    "description": "This is a travel app that help Singapore tourists plan efficient itineraries, locate popular attractions like Sentosa, and manage their trip expenses.",
+    "tags": ["java", "android", "travel", "explore", "google map"]
+  },
+  {
+    "name": "Grumpy No More",
+    "category": "project",
+    "description": "This projects is aimed to improve the process of feeding cats (or any pets) to a more efficient manner and healthier for the pets, and to help the pets caretakers to manage the pets' diet and health.",
+    "tags": ["python", "kivy", "firebase", "pets feeding"]
   }
 ]

@@ -65,47 +65,61 @@
   border-color: #fff;
 }
 
-#header, #about, #projects, #experience {
-  /*min-height: 100vh;*/
+#header, #about, #projects, #experience, #skills {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.gh-btn {
+  background-color: #eee;
+  background-image: linear-gradient(to bottom,#fcfcfc,#eee);
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  padding: 5px 6px;
+  color: #000;
+  line-height: 26px;
+  font-size: 12px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.gh-btn:hover, .gh-btn:focus {
+  background-color: #ddd;
+  background-image: linear-gradient(to bottom,#eee,#ddd);
+  border-color: #ccc;
+  color: #000;
+  text-decoration: none;
+}
+
+.gh-btn i {
   font-size: 16px;
 }
 
-#about, #about h3, #about h3 small {
+.label {
   font-weight: 300;
+}
+
+.project-description {
+  margin-top: 20px;
+}
+
+.img-xs-3 {
+  float:left;
+  width: 25%;
+  padding: 0 1px;
+}
+
+h3, h3 small {
+  font-weight: 300;
+}
+
+h2 a:hover, h2 a:focus {
+  color: #337ab7;
+  text-decoration: none;
 }
 
 .duration {
   margin: 20px 0 20px 0;
-}
-
-@media screen and (max-width: 992px) {
-  .duration {
-    margin: 0 0 10px 0;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  #rocket {
-    width: 20vw;
-    left: 40vw;
-  }
-
-  #search {
-    width: 80vw;
-    left: 10vw;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  #rocket {
-    width: 30vw;
-    left: 35vw;
-  }
-
-  #search {
-    width: 90vw;
-    left: 5vw;
-  }
 }
 
 .shake-horizontal {
@@ -221,4 +235,34 @@
   animation-duration: 100ms;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+}
+
+@media screen and (max-width: 992px) {
+  .duration {
+    margin: 0 0 10px 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #rocket {
+    width: 20vw;
+    left: 40vw;
+  }
+
+  #search {
+    width: 80vw;
+    left: 10vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #rocket {
+    width: 30vw;
+    left: 35vw;
+  }
+
+  #search {
+    width: 90vw;
+    left: 5vw;
+  }
 }
