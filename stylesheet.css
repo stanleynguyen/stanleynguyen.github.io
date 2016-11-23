@@ -70,6 +70,10 @@
   font-weight: 300;
 }
 
+#about, #projects, #experience, #skills {
+  margin-bottom: 50px;
+}
+
 .gh-btn {
   background-color: #eee;
   background-image: linear-gradient(to bottom,#fcfcfc,#eee);
@@ -99,7 +103,7 @@
   font-weight: 300;
 }
 
-.project-description {
+.description {
   margin-top: 20px;
 }
 

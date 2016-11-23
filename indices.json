@@ -28,5 +28,17 @@
     "category": "project",
     "description": "This projects is aimed to improve the process of feeding cats (or any pets) to a more efficient manner and healthier for the pets, and to help the pets caretakers to manage the pets' diet and health.",
     "tags": ["python", "kivy", "firebase", "pets feeding"]
+  },
+  {
+    "name": "Stacck",
+    "category": "experience",
+    "description": "Product Development Intern",
+    "tags": ["javascript", "nodejs", "react", "mongodb", "heroku", "agile development", "ui/ux design"]
+  },
+  {
+    "name": "$MARTBIN",
+    "category": "experience",
+    "description": "Cofounder",
+    "tags": ["firebase", "ui/ux design", "create4good", "prize"]
   }
 ]
