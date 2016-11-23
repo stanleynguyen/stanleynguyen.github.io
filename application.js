@@ -47,9 +47,20 @@ $(document).ready(function() {
   var portfolio = client.initIndex('portfolio');
 
   $(document).on('input', '#search-input', function() {
-    $('#suggestion').css('display', 'block');
-    if ( $('#search-input').val() === '' ) return;
+    if ( $('#search-input').val() === '' ) {
+      $('#suggestion').css('display', '');
+      return;
+    }
     tags.search($('#search-input').val(), function(err, content) {
+      if (err || content === undefined) {
+        $('#suggestion').css('display', '');
+        return;
+      }
+      if (content.hits.length === 0) {
+        $('#suggestion').css('display', '');
+        return;
+      }
+      $('#suggestion').css('display', 'block');
       var renderedSuggestion = '';
       content.hits.forEach(function(hit) {
         renderedSuggestion += '<a class="tag-suggestion" href="' + hit.name + '">' + hit.name + '</a> ';
