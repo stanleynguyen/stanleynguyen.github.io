@@ -15,7 +15,7 @@
     "name": "Project Happy",
     "category": "projects",
     "description": "This project is aimed to provide a helping hand to special-need teachers at Very Special Art by means of a web application.",
-    "tags": ["javascript", "react", "redux", "youtube", "web", "progressive web app", "autism"]
+    "tags": ["javascript", "react", "redux", "youtube", "web", "progressive web app", "charity"]
   },
   {
     "name": "Xplorer",
@@ -27,7 +27,7 @@
     "name": "Grumpy No More",
     "category": "projects",
     "description": "This projects is aimed to improve the process of feeding cats (or any pets) to a more efficient manner and healthier for the pets, and to help the pets caretakers to manage the pets' diet and health.",
-    "tags": ["python", "kivy", "firebase", "pets feeding"]
+    "tags": ["python", "kivy", "firebase", "pets"]
   },
   {
     "name": "Stacck",
