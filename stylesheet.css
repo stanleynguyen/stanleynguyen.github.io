@@ -126,6 +126,22 @@ h2 a:hover, h2 a:focus {
   margin: 20px 0 20px 0;
 }
 
+.single-skill {
+  display: inline-block;
+  float: left;
+  border: 1px solid #000;
+  border-radius: 3px;
+  padding: 6px 15px;
+  margin: 0 10px 10px 0;
+}
+
+.single-skill img {
+  height: 25px;
+  max-width: 25px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
 .shake-horizontal {
   display: inline-block;
   transform-origin: center center;

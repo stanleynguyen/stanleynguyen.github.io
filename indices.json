@@ -13,19 +13,19 @@
   },
   {
     "name": "Project Happy",
-    "category": "project",
+    "category": "projects",
     "description": "This project is aimed to provide a helping hand to special-need teachers at Very Special Art by means of a web application.",
     "tags": ["javascript", "react", "redux", "youtube", "web", "progressive web app", "autism"]
   },
   {
     "name": "Xplorer",
-    "category": "project",
+    "category": "projects",
     "description": "This is a travel app that help Singapore tourists plan efficient itineraries, locate popular attractions like Sentosa, and manage their trip expenses.",
     "tags": ["java", "android", "travel", "explore", "google map"]
   },
   {
     "name": "Grumpy No More",
-    "category": "project",
+    "category": "projects",
     "description": "This projects is aimed to improve the process of feeding cats (or any pets) to a more efficient manner and healthier for the pets, and to help the pets caretakers to manage the pets' diet and health.",
     "tags": ["python", "kivy", "firebase", "pets feeding"]
   },
@@ -40,5 +40,29 @@
     "category": "experience",
     "description": "Cofounder",
     "tags": ["firebase", "ui/ux design", "create4good", "prize"]
+  },
+  {
+    "name": "Web Development",
+    "category": "skills",
+    "description": "Web Development",
+    "tags": ["nodejs", "npm", "react", "redux", "es6", "webpack", "express", "mongodb", "mocha", "heroku", "html", "css"]
+  },
+  {
+    "name": "Languages",
+    "category": "skills",
+    "description": "Programming Languages",
+    "tags": ["javascript", "java", "python", "html", "css"]
+  },
+  {
+    "name": "Platforms",
+    "category": "skills",
+    "description": "Development Platforms",
+    "tags": ["web", "android"]
+  },
+  {
+    "name": "Others",
+    "category": "skills",
+    "description": "Other Skills",
+    "tags": ["git", "github", "vim"]
   }
 ]
