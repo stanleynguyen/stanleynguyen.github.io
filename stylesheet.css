@@ -316,6 +316,29 @@ footer [class^='icon-'] {
   }
 }
 
+@media screen and (max-width: 800px) and (min-aspect-ratio: 10/7) {
+  #header {
+    position: relative;
+    min-height: 70vw;
+  }
+
+  #rocket {
+    top: 10%;
+  }
+
+  #search {
+    top: 45%;
+  }
+
+  #suggestion {
+    top: 55%;
+  }
+
+  #result {
+    margin-top: 15%;
+  }
+}
+
 @media screen and (max-width: 480px) {
   #rocket {
     width: 30vw;
@@ -334,5 +357,28 @@ footer [class^='icon-'] {
 
   #result {
     margin: 15vh 5vw 5vh 5vw;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-aspect-ratio: 8/9) {
+  #header {
+    position: relative;
+    min-height: 90vw;
+  }
+
+  #rocket {
+    top: 10%;
+  }
+
+  #search {
+    top: 45%;
+  }
+
+  #suggestion {
+    top: 55%;
+  }
+
+  #result {
+    margin-top: 15%;
   }
 }
