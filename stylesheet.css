@@ -505,6 +505,29 @@ footer [class^='icon-'] {
   }
 }
 
+@media screen and (min-aspect-ratio: 26/11) {
+  #header {
+    position: relative;
+    min-height: 45vw;
+  }
+
+  #rocket {
+    top: 10%;
+  }
+
+  #search {
+    top: 45%;
+  }
+
+  #suggestion {
+    top: 55%;
+  }
+
+  #result {
+    margin-top: 15%;
+  }
+}
+
 @media screen and (max-width: 800px) {
   #rocket {
     width: 20vw;
