@@ -10,7 +10,7 @@ $(document).ready(function() {
 
   $(document).on('scroll', function() {
     //fix navbar after header
-    if (this.body.scrollTop > window.innerHeight) {
+    if ( this.body.scrollTop > $('#header').outerHeight() ) {
       $('.navbar').addClass('navbar-fixed-top');
       $('#about').css('margin-top', '70px');
     } else {
