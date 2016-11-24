@@ -129,8 +129,8 @@ function showSearchResults(term, index) {
   index.search(term, function(err, content) {
     var stopTime = (new Date()).getTime();
     var duration = ( stopTime - startTime ) / 1000;
-    if ( err || content == undefined) return console.log('Opps there was an error');
-    if ( content.hits.length == 0 ) return console.log('Oops nothing related was found');
+    if ( err || content == undefined) return $('#result').html('<hr/><p>Oops! There was an error</p>')
+    if ( content.hits.length == 0 ) return $('#result').html('<hr/><p>Oops! Nothing related was found</p>');
     var returnedHtml = '<hr/><small>About ' + content.hits.length + ' results (' + duration + ' seconds)</small><br/><br/>';
     content.hits.forEach(function(hit) {
       returnedHtml += `

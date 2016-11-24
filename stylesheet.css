@@ -160,6 +160,21 @@ h2 a:hover, h2 a:focus {
   margin-right: 10px;
 }
 
+footer {
+  margin: 10px auto 5px auto;
+}
+
+footer p {
+  text-align: center;
+  font-size: 9px;
+}
+
+footer [class^='icon-'] {
+  margin: 0 5px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
 .shake-horizontal {
   display: inline-block;
   transform-origin: center center;
@@ -295,6 +310,10 @@ h2 a:hover, h2 a:focus {
     width: 80vw;
     left: 10vw;
   }
+
+  #result {
+    margin: 15vh 10vw 5vh 10vw;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -311,5 +330,9 @@ h2 a:hover, h2 a:focus {
   #suggestion {
     width: 90vw;
     left: 5vw;
+  }
+
+  #result {
+    margin: 15vh 5vw 5vh 5vw;
   }
 }
