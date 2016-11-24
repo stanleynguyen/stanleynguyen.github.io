@@ -1,5 +1,5 @@
 #header {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #rocket {
@@ -35,6 +35,16 @@
 
 #suggestion span a {
   text-decoration: underline;
+}
+
+#result {
+  display: none;
+  margin: 15vh 25vw 5vh 25vw;
+}
+
+#result .result-link {
+  font-size: 12px;
+  color: #006621;
 }
 
 #header-next {
