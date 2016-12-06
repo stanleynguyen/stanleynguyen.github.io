@@ -44,7 +44,6 @@ $(document).ready(function() {
   $(document).on('submit', '#search', function(e) {
     e.preventDefault();
     var $input = $('#search-input');
-    console.log($input.val())
     // if ( $target.val() == '' ) return;
     $(document).off('focusout', '#search-input');
     $('#suggestion').css('display', '');
@@ -57,11 +56,18 @@ $(document).ready(function() {
       $('#search').animate({
         top: '-=40vh'
       }, 2000, function() {
+        $('#search').css('top', '0');
+        $('#search').css('margin-top', '1.5vh');
+        $('#search').css('position', 'relative');
         $('#result').css('display', 'block');
       });
       $('#suggestion').animate({
         top: '-=40vh'
-      }, 2000);
+      }, 2000, function() {
+        $('#suggestion').css('top', '0');
+        $('#suggestion').css('margin-top', '15px');
+        $('#suggestion').css('position', 'relative');
+      });
       $('#header-next').animate({
         bottom: '-=' + $('#header-next').outerHeight(true),
         opacity: '0'

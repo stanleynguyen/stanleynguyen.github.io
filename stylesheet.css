@@ -40,7 +40,7 @@
 
 #result {
   display: none;
-  margin: 15vh 25vw 5vh 25vw;
+  margin: 15px 25vw 5vh 25vw;
 }
 
 #result .result-link {
@@ -523,9 +523,9 @@ footer [class^='icon-'] {
     top: 55%;
   }
 
-  #result {
+  /*#result {
     margin-top: 15%;
-  }
+  }*/
 }
 
 @media screen and (max-width: 800px) {
@@ -545,7 +545,7 @@ footer [class^='icon-'] {
   }
 
   #result {
-    margin: 15vh 10vw 5vh 10vw;
+    margin: 0 10vw 5vh 10vw;
   }
 }
 
@@ -567,9 +567,9 @@ footer [class^='icon-'] {
     top: 55%;
   }
 
-  #result {
+  /*#result {
     margin-top: 15%;
-  }
+  }*/
 }
 
 @media screen and (max-width: 480px) {
@@ -589,7 +589,7 @@ footer [class^='icon-'] {
   }
 
   #result {
-    margin: 15vh 5vw 5vh 5vw;
+    margin: 0 5vw 5vh 5vw;
   }
 }
 
@@ -611,7 +611,7 @@ footer [class^='icon-'] {
     top: 55%;
   }
 
-  #result {
+  /*#result {
     margin-top: 15%;
-  }
+  }*/
 }
