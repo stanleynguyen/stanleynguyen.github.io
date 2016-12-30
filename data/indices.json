@@ -64,5 +64,11 @@
     "category": "skills",
     "description": "Other Skills",
     "tags": ["git", "github", "vim"]
+  },
+  {
+    "name": "Souschef",
+    "category": "experience",
+    "description": "Web Developer",
+    "tags": ["javascript", "nodejs", "ui/ux design", "mongodb", "heroku"]
   }
 ]
