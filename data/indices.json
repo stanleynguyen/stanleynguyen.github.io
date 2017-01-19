@@ -70,5 +70,11 @@
     "category": "experience",
     "description": "Web Developer",
     "tags": ["javascript", "nodejs", "ui/ux design", "mongodb", "heroku"]
+  },
+  {
+    "name": "Huat Greetings Wall",
+    "category": "projects",
+    "description": "Interactive Wall for Chinatown New Year Festival 2017",
+    "tags": ["javascript", "nodejs", "heroku", "mongodb"]
   }
 ]
