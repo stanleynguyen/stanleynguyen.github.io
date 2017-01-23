@@ -142,5 +142,9 @@
   {
     "name": "vim",
     "rank": 2
+  },
+  {
+    "name": "bot",
+    "rank": 2
   }
 ]

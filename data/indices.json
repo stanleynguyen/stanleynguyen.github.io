@@ -76,5 +76,11 @@
     "category": "projects",
     "description": "Interactive Wall for Chinatown New Year Festival 2017",
     "tags": ["javascript", "nodejs", "heroku", "mongodb"]
+  },
+  {
+    "name": "Telegram Scheduler Bot",
+    "category": "projects",
+    "description": "A simple scheduling chatbot which can tell joke",
+    "tags": ["javascript", "bot", "nodejs", "mongodb"]
   }
 ]
