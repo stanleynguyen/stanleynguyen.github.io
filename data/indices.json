@@ -45,7 +45,7 @@
     "name": "Web Development",
     "category": "skills",
     "description": "Web Development",
-    "tags": ["nodejs", "npm", "react", "redux", "es6", "webpack", "express", "mongodb", "postgresql", "mocha", "heroku", "html", "css"]
+    "tags": ["nodejs", "npm", "react", "vue", "redux", "es6", "webpack", "express", "mongodb", "postgresql", "mysql", "mocha", "heroku", "html", "css"]
   },
   {
     "name": "Languages",
@@ -68,7 +68,7 @@
   {
     "name": "Souschef",
     "category": "experience",
-    "description": "Web Developer",
+    "description": "System Architect",
     "tags": ["javascript", "nodejs", "ui/ux design", "mongodb", "heroku"]
   },
   {
@@ -82,5 +82,17 @@
     "category": "projects",
     "description": "A simple scheduling chatbot which can tell joke",
     "tags": ["javascript", "bot", "nodejs", "mongodb"]
+  },
+  {
+    "name": "Firsttouch.io",
+    "category": "experience",
+    "description": "Frontend Engineer",
+    "tags": ["javascript", "vue", "ui/ux design"]
+  },
+  {
+    "name": "Visa Inc.",
+    "category": "experience",
+    "description": "Network Processing Intern",
+    "tags": ["javascript", "nodejs", "react", "mysql", "internship"]
   }
 ]

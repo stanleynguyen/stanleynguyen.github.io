@@ -20,6 +20,10 @@
     "rank": 3
   },
   {
+    "name": "vue",
+    "rank": 3
+  },
+  {
     "name": "redux",
     "rank": 3
   },
@@ -85,6 +89,10 @@
   },
   {
     "name": "postgresql",
+    "rank": 3
+  },
+  {
+    "name": "mysql",
     "rank": 3
   },
   {
