@@ -51,7 +51,7 @@
     "name": "Languages",
     "category": "skills",
     "description": "Programming Languages",
-    "tags": ["javascript", "java", "python", "html", "css"]
+    "tags": ["go", "javascript", "java", "python", "html", "css"]
   },
   {
     "name": "Platforms",

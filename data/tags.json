@@ -154,5 +154,13 @@
   {
     "name": "bot",
     "rank": 2
+  },
+  {
+    "name": "internship",
+    "rank": 3
+  },
+  {
+    "name": "go",
+    "rank": 3
   }
 ]

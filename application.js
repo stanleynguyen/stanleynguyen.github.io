@@ -1,23 +1,56 @@
-$(document).ready(function() {
+function smoothScroll(anchor, offset) {
+  $('html,body').animate({scrollTop: $(anchor).offset().top - offset }, 'slow');
+}
 
-  if ( this.body.scrollTop > $('#header').outerHeight() ) {
+function activateRocket(bool, e) {
+  if (bool) {
+    $('#rocket-wrap').addClass('shake-constant');
+    $('.fire').css('display', 'block');
+  } else {
+    $('#rocket-wrap').removeClass('shake-constant');
+    $('.fire').css('display', '');
+  }
+}
+
+function showSearchResults(term, index) {
+  var startTime = (new Date()).getTime();
+  index.search(term, function(err, content) {
+    var stopTime = (new Date()).getTime();
+    var duration = ( stopTime - startTime ) / 1000;
+    if ( err || content == undefined) return $('#result').html('<hr/><p>Oops! There was an error</p>')
+    if ( content.hits.length == 0 ) return $('#result').html('<hr/><p>Oops! Nothing related was found</p>');
+    var returnedHtml = '<hr/><small>About ' + content.hits.length + ' results (' + duration + ' seconds)</small><br/><br/>';
+    content.hits.forEach(function(hit) {
+      returnedHtml += `
+        <div class="row">
+          <div class="col-xs-12">
+            <a href="#${hit.category}" class="scroll-header">${hit.name}</a>
+            <p>
+              <small class="result-link">#${hit.category}</small>
+              <br />
+              ${hit.description}
+            </p>
+          </div>
+        </div>`;
+    });
+    $('#result').html(returnedHtml);
+  });
+}
+
+function fixNavbar() {
+  if ( $(document).scrollTop() > $('#header').outerHeight() ) {
     $('.navbar').addClass('navbar-fixed-top');
     $('#about').css('margin-top', '70px');
   } else {
     $('.navbar').removeClass('navbar-fixed-top');
     $('#about').css('margin-top', '0');
   }
+}
 
-  $(document).on('scroll', function() {
-    //fix navbar after header
-    if ( this.body.scrollTop > $('#header').outerHeight() ) {
-      $('.navbar').addClass('navbar-fixed-top');
-      $('#about').css('margin-top', '70px');
-    } else {
-      $('.navbar').removeClass('navbar-fixed-top');
-      $('#about').css('margin-top', '0');
-    }
-  });
+$(document).ready(function() {
+
+  fixNavbar();
+  $(document).on('scroll', fixNavbar);
 
   $(document).on('click', '.navbar-collapse', $('.navbar-toggle').trigger.bind($('.navbar-toggle'), 'click'));
 
@@ -110,47 +143,6 @@ $(document).ready(function() {
     var $target = $(e.currentTarget);
     $('#search-input').val($target.attr('href'));
     $('#search').trigger('submit');
-  })
+  });
 
 });
-
-function smoothScroll(anchor, offset) {
-  $('body').animate({scrollTop: $(anchor).offset().top - offset }, 'slow');
-}
-
-function activateRocket(bool, e) {
-  if (bool) {
-    $('#rocket-wrap').addClass('shake-constant');
-    $('.fire').css('display', 'block');
-  } else {
-    $('#rocket-wrap').removeClass('shake-constant');
-    $('.fire').css('display', '');
-  }
-}
-
-function showSearchResults(term, index) {
-  console.log('term', term);
-  console.log('index', index);
-  var startTime = (new Date()).getTime();
-  index.search(term, function(err, content) {
-    var stopTime = (new Date()).getTime();
-    var duration = ( stopTime - startTime ) / 1000;
-    if ( err || content == undefined) return $('#result').html('<hr/><p>Oops! There was an error</p>')
-    if ( content.hits.length == 0 ) return $('#result').html('<hr/><p>Oops! Nothing related was found</p>');
-    var returnedHtml = '<hr/><small>About ' + content.hits.length + ' results (' + duration + ' seconds)</small><br/><br/>';
-    content.hits.forEach(function(hit) {
-      returnedHtml += `
-        <div class="row">
-          <div class="col-xs-12">
-            <a href="#${hit.category}" class="scroll-header">${hit.name}</a>
-            <p>
-              <small class="result-link">#${hit.category}</small>
-              <br />
-              ${hit.description}
-            </p>
-          </div>
-        </div>`;
-    });
-    $('#result').html(returnedHtml);
-  });
-}
