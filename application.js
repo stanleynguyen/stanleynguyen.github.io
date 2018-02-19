@@ -1,5 +1,8 @@
 function smoothScroll(anchor, offset) {
-  $('html,body').animate({scrollTop: $(anchor).offset().top - offset }, 'slow');
+  $('html,body').animate(
+    { scrollTop: $(anchor).offset().top - offset },
+    'slow',
+  );
 }
 
 function activateRocket(bool, e) {
@@ -13,13 +16,20 @@ function activateRocket(bool, e) {
 }
 
 function showSearchResults(term, index) {
-  var startTime = (new Date()).getTime();
+  var startTime = new Date().getTime();
   index.search(term, function(err, content) {
-    var stopTime = (new Date()).getTime();
-    var duration = ( stopTime - startTime ) / 1000;
-    if ( err || content == undefined) return $('#result').html('<hr/><p>Oops! There was an error</p>')
-    if ( content.hits.length == 0 ) return $('#result').html('<hr/><p>Oops! Nothing related was found</p>');
-    var returnedHtml = '<hr/><small>About ' + content.hits.length + ' results (' + duration + ' seconds)</small><br/><br/>';
+    var stopTime = new Date().getTime();
+    var duration = (stopTime - startTime) / 1000;
+    if (err || content == undefined)
+      return $('#result').html('<hr/><p>Oops! There was an error</p>');
+    if (content.hits.length == 0)
+      return $('#result').html('<hr/><p>Oops! Nothing related was found</p>');
+    var returnedHtml =
+      '<hr/><small>About ' +
+      content.hits.length +
+      ' results (' +
+      duration +
+      ' seconds)</small><br/><br/>';
     content.hits.forEach(function(hit) {
       returnedHtml += `
         <div class="row">
@@ -38,7 +48,7 @@ function showSearchResults(term, index) {
 }
 
 function fixNavbar() {
-  if ( $(document).scrollTop() > $('#header').outerHeight() ) {
+  if ($(document).scrollTop() > $('#header').outerHeight()) {
     $('.navbar').addClass('navbar-fixed-top');
     $('#about').css('margin-top', '70px');
   } else {
@@ -48,11 +58,14 @@ function fixNavbar() {
 }
 
 $(document).ready(function() {
-
   fixNavbar();
   $(document).on('scroll', fixNavbar);
 
-  $(document).on('click', '.navbar-collapse', $('.navbar-toggle').trigger.bind($('.navbar-toggle'), 'click'));
+  $(document).on(
+    'click',
+    '.navbar-collapse',
+    $('.navbar-toggle').trigger.bind($('.navbar-toggle'), 'click'),
+  );
 
   $(document).on('click', '.scroll-header', function(e) {
     e.preventDefault();
@@ -66,7 +79,11 @@ $(document).ready(function() {
 
   $(document).on('focusin', '#search-input', activateRocket.bind(event, true));
 
-  $(document).on('focusout', '#search-input', activateRocket.bind(event, false));
+  $(document).on(
+    'focusout',
+    '#search-input',
+    activateRocket.bind(event, false),
+  );
 
   var client = algoliasearch('6YNC2SJ10O', '38564c2dd6e90e69fb009943988c1314');
   var tags = client.initIndex('tags');
@@ -83,39 +100,57 @@ $(document).ready(function() {
     showSearchResults($input.val(), portfolio);
     if (!ANIMATED) {
       activateRocket(true);
-      $('#rocket').animate({
-        top: '-=40vh'
-      }, 2000);
-      $('#search').animate({
-        top: '-=40vh'
-      }, 2000, function() {
-        $('#search').css('top', '0');
-        $('#search').css('margin-top', '1.5vh');
-        $('#search').css('position', 'relative');
-        $('#result').css('display', 'block');
-      });
-      $('#suggestion').animate({
-        top: '-=40vh'
-      }, 2000, function() {
-        $('#suggestion').css('top', '0');
-        $('#suggestion').css('margin-top', '15px');
-        $('#suggestion').css('position', 'relative');
-      });
-      $('#header-next').animate({
-        bottom: '-=' + $('#header-next').outerHeight(true),
-        opacity: '0'
-      }, 2000, function() {
-        $('#header-next').css('display', 'none');
-      });
-      $('#rocket').animate({
-        top: '-=60vh'
-      }, 1000);
+      $('#rocket').animate(
+        {
+          top: '-=40vh',
+        },
+        2000,
+      );
+      $('#search').animate(
+        {
+          top: '-=40vh',
+        },
+        2000,
+        function() {
+          $('#search').css('top', '0');
+          $('#search').css('margin-top', '1.5vh');
+          $('#search').css('position', 'relative');
+          $('#result').css('display', 'block');
+        },
+      );
+      $('#suggestion').animate(
+        {
+          top: '-=40vh',
+        },
+        2000,
+        function() {
+          $('#suggestion').css('top', '0');
+          $('#suggestion').css('margin-top', '15px');
+          $('#suggestion').css('position', 'relative');
+        },
+      );
+      $('#header-next').animate(
+        {
+          bottom: '-=' + $('#header-next').outerHeight(true),
+          opacity: '0',
+        },
+        2000,
+        function() {
+          $('#header-next').css('display', 'none');
+        },
+      );
+      $('#rocket').animate(
+        {
+          top: '-=60vh',
+        },
+        1000,
+      );
       ANIMATED = true;
     }
   });
 
   $(document).on('input', '#search-input', function() {
-    if ( $('#search-input').val() === '' ) {
+    if ($('#search-input').val() === '') {
       $('#suggestion').css('display', '');
       return;
     }
@@ -131,8 +166,13 @@ $(document).ready(function() {
       $('#suggestion').css('display', 'block');
       var renderedSuggestion = '';
       content.hits.forEach(function(hit) {
-        renderedSuggestion += '<a class="tag-suggestion" href="' + hit.name + '">' + hit.name + '</a> ';
-      })
+        renderedSuggestion +=
+          '<a class="tag-suggestion" href="' +
+          hit.name +
+          '">' +
+          hit.name +
+          '</a> ';
+      });
       $('#suggestion span').html('');
       $('#suggestion span').append(renderedSuggestion);
     });
@@ -144,5 +184,4 @@ $(document).ready(function() {
     $('#search-input').val($target.attr('href'));
     $('#search').trigger('submit');
   });
-
 });

@@ -45,7 +45,7 @@
     "name": "Web Development",
     "category": "skills",
     "description": "Web Development",
-    "tags": ["nodejs", "npm", "react", "vue", "redux", "es6", "webpack", "express", "mongodb", "postgresql", "mysql", "mocha", "heroku", "html", "css"]
+    "tags": ["docker", "nodejs", "npm", "react", "vue", "redux", "es6", "webpack", "express", "mongodb", "postgresql", "mysql", "mocha", "heroku", "html", "css"]
   },
   {
     "name": "Languages",
