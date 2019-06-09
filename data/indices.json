@@ -12,10 +12,30 @@
     "tags": ["high school", "education"]
   },
   {
+    "name": "Mindmaker Bot",
+    "category": "projects",
+    "description": "A bot that helps with making up your minds.",
+    "tags": ["go", "docker", "boltdb", "bot"]
+  },
+  {
+    "name": "Accessible PayLah!",
+    "category": "projects",
+    "description": "Revised application UI of DBS PayLah! app with the visually handicapped target audience in mind while maintaining the usability for the general sighted users.",
+    "tags": ["javascript", "react"]
+  },
+  {
     "name": "Project Happy",
     "category": "projects",
     "description": "This project is aimed to provide a helping hand to special-need teachers at Very Special Art by means of a web application.",
-    "tags": ["javascript", "react", "redux", "youtube", "web", "progressive web app", "charity"]
+    "tags": [
+      "javascript",
+      "react",
+      "redux",
+      "youtube",
+      "web",
+      "progressive web app",
+      "charity"
+    ]
   },
   {
     "name": "Xplorer",
@@ -33,7 +53,15 @@
     "name": "Stacck",
     "category": "experience",
     "description": "Product Development Intern",
-    "tags": ["javascript", "nodejs", "react", "mongodb", "heroku", "agile development", "ui/ux design"]
+    "tags": [
+      "javascript",
+      "nodejs",
+      "react",
+      "mongodb",
+      "heroku",
+      "agile development",
+      "ui/ux design"
+    ]
   },
   {
     "name": "$MARTBIN",
@@ -45,7 +73,24 @@
     "name": "Web Development",
     "category": "skills",
     "description": "Web Development",
-    "tags": ["docker", "nodejs", "npm", "react", "vue", "redux", "es6", "webpack", "express", "mongodb", "postgresql", "mysql", "mocha", "heroku", "html", "css"]
+    "tags": [
+      "docker",
+      "nodejs",
+      "npm",
+      "react",
+      "vue",
+      "redux",
+      "es6",
+      "webpack",
+      "express",
+      "mongodb",
+      "postgresql",
+      "mysql",
+      "mocha",
+      "heroku",
+      "html",
+      "css"
+    ]
   },
   {
     "name": "Languages",
