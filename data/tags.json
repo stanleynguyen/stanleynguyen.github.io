@@ -1,5 +1,13 @@
 [
   {
+    "name": "redis",
+    "rank": 3
+  },
+  {
+    "name": "kubernetes",
+    "rank": 2
+  },
+  {
     "name": "university",
     "rank": 1
   },

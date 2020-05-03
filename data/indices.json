@@ -1,5 +1,25 @@
 [
   {
+    "name": "Xendit",
+    "category": "experience",
+    "description": "Software Engineer, API",
+    "tags": [
+      "javascript",
+      "go",
+      "nodejs",
+      "mongodb",
+      "agile development",
+      "docker",
+      "kubernetes"
+    ]
+  },
+  {
+    "name": "Visa Inc",
+    "category": "experience",
+    "description": "Software Engineer, Global Dispute Processing",
+    "tags": ["java", "javascript", "react", "mysql"]
+  },
+  {
     "name": "SUTD Singapore University of Technology and Design",
     "category": "education",
     "description": "University",
@@ -89,7 +109,8 @@
       "mocha",
       "heroku",
       "html",
-      "css"
+      "css",
+      "redis"
     ]
   },
   {
