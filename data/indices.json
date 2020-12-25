@@ -1,5 +1,26 @@
 [
   {
+    "name": "ismylandlordnice",
+    "category": "projects",
+    "description": "A platform for renters to find information about their potential landlords from peers and give reviews about past landlords.",
+    "tags": [
+      "javascript",
+      "nodejs",
+      "mongodb"
+    ]
+  },
+  {
+    "name": "rand(meme)",
+    "description": "Meme-as-a-service 🌚",
+    "category": "projects",
+    "tags": [
+      "go",
+      "javascript",
+      "docker",
+      "mongodb"
+    ]
+  },
+  {
     "name": "Xendit",
     "category": "experience",
     "description": "Software Engineer, API",
@@ -110,7 +131,8 @@
       "heroku",
       "html",
       "css",
-      "redis"
+      "redis",
+      "kubernetes"
     ]
   },
   {
