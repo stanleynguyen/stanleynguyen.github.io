@@ -178,5 +178,17 @@
   {
     "name": "boltdb",
     "rank": 3
+  },
+  {
+    "name": "product management",
+    "rank": 2
+  },
+  {
+    "name": "business development",
+    "rank": 2
+  },
+  {
+    "name": "management",
+    "rank": 2
   }
 ]

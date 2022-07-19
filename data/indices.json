@@ -3,27 +3,18 @@
     "name": "ismylandlordnice",
     "category": "projects",
     "description": "A platform for renters to find information about their potential landlords from peers and give reviews about past landlords.",
-    "tags": [
-      "javascript",
-      "nodejs",
-      "mongodb"
-    ]
+    "tags": ["javascript", "nodejs", "mongodb"]
   },
   {
     "name": "rand(meme)",
     "description": "Meme-as-a-service 🌚",
     "category": "projects",
-    "tags": [
-      "go",
-      "javascript",
-      "docker",
-      "mongodb"
-    ]
+    "tags": ["go", "javascript", "docker", "mongodb"]
   },
   {
     "name": "Xendit",
     "category": "experience",
-    "description": "Software Engineer, API",
+    "description": "Senior Software Engineer, API",
     "tags": [
       "javascript",
       "go",
@@ -31,7 +22,8 @@
       "mongodb",
       "agile development",
       "docker",
-      "kubernetes"
+      "kubernetes",
+      "postgresql"
     ]
   },
   {
@@ -182,5 +174,38 @@
     "category": "experience",
     "description": "Network Processing Intern",
     "tags": ["javascript", "nodejs", "react", "mysql", "internship"]
+  },
+  {
+    "name": "Xendit",
+    "category": "experience",
+    "description": "Staff Software Engineer, Experiments",
+    "tags": [
+      "javascript",
+      "go",
+      "nodejs",
+      "mongodb",
+      "agile development",
+      "docker",
+      "kubernetes",
+      "postgresql"
+    ]
+  },
+  {
+    "name": "Xendit",
+    "category": "experience",
+    "description": "Product Manager, Experiments",
+    "tags": ["product management", "agile development"]
+  },
+  {
+    "name": "Open Government Products, GovTech Singapore",
+    "category": "experience",
+    "description": "Senior Software Engineer",
+    "tags": ["node", "docker", "agile development", "postgresql"]
+  },
+  {
+    "name": "Pixel8Labs",
+    "category": "experience",
+    "description": "Chief Executive Officer",
+    "tags": ["business development", "management"]
   }
 ]
